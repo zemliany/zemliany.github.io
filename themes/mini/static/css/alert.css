@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    /* Define reusable colors */
+    --primary-color: #4d4dff; /* Info */
+    --warning-color: #ffba00; /* Warning */
+    --success-color: #2ec946; /* Success */
+    --danger-color: #ff3838; /* Danger */
+    --tip-color: #2e7539; /* Tip */
+  
+    --text-color: #333333;
+    --background-color-light: rgba(0, 0, 0, 0.05);
+  }
+  
+  .alert {
+    padding: 16px;
+    margin: 0px;
+    border-left: 6px solid transparent;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color-light);
+    text-align: left;
+  }
+  
+  .alert-icon {
+    font-size: 20px;
+    margin-right: 8px; 
+  }
+  
+  .alert-title {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: inherit; 
+    text-align: left;
+  }
+  
+  .alert-content {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .alert.info {
+    border-left-color: var(--primary-color);
+    background-color: rgba(77, 77, 255, 0.05);
+  }
+  
+  .alert.info .alert-icon,
+  .alert.info .alert-title {
+    color: var(--primary-color);
+  }
+  
+  .alert.warning {
+    border-left-color: var(--warning-color);
+    background-color: rgba(255, 186, 0, 0.05);
+  }
+  
+  .alert.warning .alert-icon,
+  .alert.warning .alert-title {
+    color: var(--warning-color);
+  }
+  
+  .alert.success {
+    border-left-color: var(--success-color);
+    background-color: rgba(46, 201, 70, 0.05);
+  }
+  
+  .alert.success .alert-icon,
+  .alert.success .alert-title {
+    color: var(--success-color);
+  }
+  
+  .alert.danger {
+    border-left-color: var(--danger-color);
+    background-color: rgba(255, 56, 56, 0.05);
+  }
+  
+  .alert.danger .alert-icon,
+  .alert.danger .alert-title {
+    color: var(--danger-color);
+  }
+  
+  .alert.tip {
+    border-left-color: var(--tip-color);
+    background-color: rgba(46, 117, 57, 0.05);
+  }
+  
+  .alert.tip .alert-icon,
+  .alert.tip .alert-title {
+    color: var(--tip-color);
+  }
+  

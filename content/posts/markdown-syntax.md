@@ -146,3 +146,27 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+
+</br>
+{{< alert type="warning" title="WARNING" >}}
+You cannot install certificates with 4096-bit RSA keys or EC keys on your Elastic Load Balancer (Classic) through integration with ACM. You must upload certificates with 4096-bit RSA keys or EC keys to IAM in order to use them with your load balancer.
+{{< /alert >}}
+
+</br>
+
+{{< alert type="tip" title="TIP" >}}
+This is an informational message.
+{{< /alert >}}
+
+</br>
+
+{{< alert type="danger" title="DANGER" >}}
+This is an informational message.
+{{< /alert >}}
+
+</br>
+
+{{< alert type="success" title="success" >}}
+This is an informational message.
+{{< /alert >}}

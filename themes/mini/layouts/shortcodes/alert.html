@@ -1,0 +1,20 @@
+{{- $inner := .Inner | .Page.RenderString -}}
+
+{{- $iconMap := dict "info" "fas fa-info-circle fa-fw" -}}
+{{- $iconMap  = dict "tip" "fas fa-lightbulb fa-fw" | merge $iconMap -}}
+{{- $iconMap  = dict "success" "fas fa-check-circle fa-fw" | merge $iconMap -}}
+{{- $iconMap  = dict "question" "fas fa-question-circle fa-fw" | merge $iconMap -}}
+{{- $iconMap  = dict "warning" "fas fa-exclamation-triangle fa-fw" | merge $iconMap -}}
+{{- $iconMap  = dict "danger" "fas fa-skull-crossbones fa-fw" | merge $iconMap -}}
+{{- $iconDetails := "fas fa-angle-right fa-fw" -}}
+
+
+{{- if .IsNamedParams -}}
+    {{- $type := .Get "type" | default "info" -}}
+    <div class="alert {{ $type }}">
+        <h3 class="alert-title"> <i class='{{ index $iconMap $type | default (index $iconMap "note") }}'></i> {{ .Get "title" | default (T $type) }}</h3>
+        <p class="alert-content">
+            {{- $inner -}}
+        </p>
+    </div>
+{{- end -}}
