@@ -1,28 +1,16 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
 date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+aliases = ["about-me", "contact"]
+author = "Maksym Zemlianyi"
 enableComments = false
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Greetings to everyone who reach out this page! My name is Maksym based on Ukraine, and I've been working as DevOps / SRE / Platform Engineer. I started my career in IT as a IT Service Engineer in 2012. Worked and gained experience mainly in product companies, which allowed me to gradually grow into DevOps. Starting from 2024, I've entered into Master's Machine Learning and Cloud Computing program at [SET University](https://www.setuniversity.edu.ua/en/education/computer-science-machine-learning-cloud-computing/)
 
-Hugo makes use of a variety of open source projects including:
+In my work I've mainly focused and specialized on full-cycle automation, clouds, administration, containers management and orchestration.
+In my Master's degree study, I'm hoping to achieve some new exciting experience with Machine Learning and generally learn something new
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+I love to learn something new and share experiences. There are some interesting (or not) notes will be appeared here in scope of gained my professional or study experience or experince of my collegues (from their approval of course), where I was participated as contributor.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
-Із фокусом
+There is no any guarantee that any notes or articles will appear here regularly, but at the same time, perhaps someone will find something useful for themselves as a starting point for research or another transit point in an attempt to solve a specific problem.

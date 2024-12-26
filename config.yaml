@@ -1,6 +1,6 @@
 baseURL: https://zemliany.github.io/
 languageCode: en-us
-title: Blackhole
+title: /dev/null
 theme: mini
 defaultContentLanguage: en
 themesDir: themes
@@ -31,8 +31,7 @@ markup:
 # Site parameters
 params:
   author: Maksym Zemlianyi
-  # Author biography
-  bio: DevOps | SRE | Platform Engineer
+  bio: Engineering notes
   description: My Blog
   social:
     github: https://github.com/zemliany
