@@ -24,9 +24,7 @@ SSL certificates you should have openssl lib pre-installed in your OS[^1].
 Once you have openssl installed on your OS, reporter gives you appropriate SSL certificate stuff, you can verify MD5 hashes of that files to make sure, that private key fit to the root certificate
 
 {{< alert type=tip title="TIP: PRIVATE KEY IS ENCRYPTED" >}}
-if you received **private key** as **encrypted**, you can **decrypt** it via openssl tool. **Password for decryption should be provided by requestor or any other person who require SSL certificates to be uploaded to any DP AWS Accounts**. So if your key is encrypted, you can decrypt it by following command:
-
-
+if you received **private key** as **encrypted**, you can **decrypt** it via openssl tool. So if your key is encrypted, you can decrypt it by following command: `openssl rsa -in encrypted.key -out decrypted.key`
 {{< /alert >}}
 
 
@@ -189,7 +187,7 @@ by using command above you'll get something like this:
 
 ## How to upload SSL certificate to AWS ACM
 
-ACM is known as AWS Certificate Manager that handles the complexity of creating, storing, and renewing public and private SSL/TLS X.509 certificates and keys that protect your AWS websites and applications. By using ACM instead of IAM you're able to manage teams SSL certificates on the fly and re-import them if they already exists in ACM, which would update SSL listeners for all LoadBalancers what bind to the particular certificate deployed in ACM.
+ACM is known as AWS Certificate Manager that handles the complexity of creating, storing, and renewing public and private SSL/TLS X.509 certificates and keys that protect your AWS websites and applications. By using ACM instead of IAM you're able to manage SSL certificates on the fly and re-import them if they already exists in ACM, which would update SSL listeners for all LoadBalancers what bind to the particular certificate deployed in ACM.
 
 So, after all necessary checks described above if you're going ACM (or requestor asked for that), firstly you need to check if certificate for target domain already presented in ACM. You can do that by using following command:
 
@@ -248,7 +246,7 @@ aws acm import-certificate --certificate fileb://server.pem --private-key fileb:
 {{</highlight >}}
 
 {{< alert type=info title="INFO" >}}
-Please pay attention, that **ACM is regional-depended AWS service** with compare to **IAM**, which means, that you should upload/re-import certificates with pointing out correct **\<region\>**. So if you missed or put wrong region in the aws-cli command quite proable when teams will try to use certificate ARN what you'll provide after the uploading in their services - it quite probable won't be work for their services, because certificate has been uploaded to wrong region.
+Please pay attention, that **ACM is regional-depended AWS service** with compare to **IAM**, which means, that you should upload/re-import certificates with pointing out correct **\<region\>**. So if you missed or put wrong region in the `aws-cli` command quite proable when you will try to use certificate ARN what you'll provide after the uploading in their services - it quite probable won't be work for their services, because certificate has been uploaded to wrong region.
 
 {{< /alert >}}
 
