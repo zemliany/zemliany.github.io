@@ -17,6 +17,13 @@
         <span>
           {{ i18n "minuteRead" . }}
         </span>
+        {{ with .Params.tags }}
+        <div class="tags">
+            {{ range . }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </div>
+      {{ end}}
     </div>
 
     
@@ -29,13 +36,6 @@
       {{ .Content }}
     </div>
 
-    {{ with .Params.tags }}
-        <div class="tags">
-            {{ range . }}
-                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-            {{ end }}
-        </div>
-    {{ end}}
     
     {{ partial "comment.html" . }}
 
