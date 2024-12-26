@@ -14,8 +14,10 @@ paginate: 3
 markup:
   highlight:
     guessSyntax: false
-    style: monokai
-    lineNumbers: true
+    style: dracula
+    lineNos: false
+    lineNumbersInTable: true
+    tabWidth: 4
   tableOfContents:
     endLevel: 3
     ordered: false
@@ -23,6 +25,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      highlight: true
 
 # Site parameters
 params:
