@@ -1,0 +1,33 @@
+_conf.example.yaml
+*.example.yaml
+
+# Hugo build output directory
+public/
+resources/
+hugo_stats.json
+
+# Node.js dependencies (if using npm/yarn)
+node_modules/
+package-lock.json
+hugo_build.lock
+.hugo_build.lock
+yarn.lock
+
+# Temporary or system files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Hugo server cache
+.cache/
+
+# Log files
+*.log
+
+# OS-specific files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
