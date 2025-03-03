@@ -2,7 +2,7 @@
 ---
 author: "Maksym Zemlianyi"
 title: "How to upload SSL certificate to IAM or ACM"
-date: "2022-04-29"
+date: "2024-04-29"
 description: "Quick guide how to check consistency of ssl certificate and upload it to AWS IAM or ACM"
 tags:
 - Cloud Computing

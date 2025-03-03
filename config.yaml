@@ -13,9 +13,9 @@ paginate: 3
 # More info: https://gohugo.io/getting-started/configuration-markup#
 markup:
   highlight:
-    guessSyntax: false
+    guessSyntax: true
     style: dracula
-    lineNos: false
+    lineNos: true
     lineNumbersInTable: true
     tabWidth: 4
   tableOfContents:
