@@ -7,7 +7,8 @@ themesDir: themes
 hasCJKLanguage: true
 permalinks:
   posts: /posts/:title/
-paginate: 3
+pagination:
+  paginate: 3
 
 # Hugo Configure Markup
 # More info: https://gohugo.io/getting-started/configuration-markup#
