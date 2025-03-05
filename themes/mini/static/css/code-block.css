@@ -1,9 +1,9 @@
-.code-block {
+/* .code-block {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
   font-family: 'Fira Code', monospace;
-  margin: 0 !important; /* Ensure no extra space around the entire block */
+  margin: 0 !important; 
   padding: 0;
 }
 
@@ -16,8 +16,8 @@
   justify-content: space-between;
   align-items: center;
   font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono";
-  margin: 0; /* Remove default margins from <pre> */
-  border-top: 1px solid #444; /* Optional: separates the header and code visually */
+  margin: 0;
+  border-top: 1px solid #444; 
 }
 
 .language-label {
@@ -32,9 +32,9 @@
   overflow: auto;
   font-size: 0.85rem;
   border-top: 1px solid #444;
-  line-height: 1.4; /* Adjust line spacing if needed */
+  line-height: 1.4;
   display: flex;
-  align-items: center; /* Centers the text inside the block */
+  align-items: center;
 }
 
 .copy-button {
@@ -64,4 +64,129 @@
 
 .copy-button:active {
   background: #888;
+} */
+
+/* General Code Block Styling */
+.code-block {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Fira Code', monospace;
+  margin: 0 !important;
+  padding: 0;
+  background: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling */
+.code-header {
+  background: #1d1f21;
+  color: #ccc;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono";
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+}
+
+/* Code Content */
+.code-content {
+  display: flex;
+  align-items: flex-start;
+  background: #2b2b2b;
+  overflow: visible;  /* Change from auto to visible */
+  flex-grow: 1;
+  min-height: fit-content;
+}
+
+/* Line Numbers */
+.line-numbers {
+  padding: 0.6rem 0.75rem;
+  text-align: right;
+  color: #888;
+  user-select: none;
+  font-size: 0.85rem;
+  background-color: #1e1e1e;
+  line-height: 1.4;
+  white-space: nowrap;
+  min-width: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+/* Hide line numbers if empty */
+.line-numbers:empty {
+  display: none;
+}
+
+/* Ensure each number aligns correctly */
+.line-numbers span {
+  display: block;
+  text-align: right;
+  padding-right: 0.5rem;
+  line-height: 1.4;
+  height: 1.4em;
+}
+
+/* Code Block */
+pre {
+  margin: 0 !important;
+  padding: 0.5rem 1rem !important;
+  line-height: 1.4;
+  overflow: auto;
+  display: block;
+  flex-grow: 1;
+  min-height: auto !important;  /* Ensure it grows dynamically */
+  max-height: none !important;
+}
+
+/* Fix Extra Space Below Code */
+pre code {
+  display: block;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* Copy Button */
+.copy-button {
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Show Copy Button on Hover */
+.code-block:hover .copy-button {
+  opacity: 1;
+}
+
+/* Button Hover Effects */
+.copy-button:hover {
+  background: #666;
+}
+
+.copy-button:active {
+  background: #888;
+}
+
+/* Fix alignment of line numbers with code */
+.code-content pre, .code-content .line-numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

@@ -1,8 +1,13 @@
 <div class="code-block">
-    <div class="code-header">
-      <span class="language-label">{{ .Get "lang" | default "text" }}</span>
-    </div>
-    <pre><code class="language-{{ .Get "lang" | default "text" }}">{{- .Inner | safeHTML -}}</code></pre>
+  <div class="code-header">
+    <span class="language-label">{{ .Get "lang" | default "text" }}</span>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+  <div class="code-content">
+    <div class="line-numbers"></div>
+    <pre><code class="language-{{ .Get "lang" | default "text" }}">
+      {{- $code := .Inner | safeHTML | replaceRE `^\s+|\s+$` "" -}}
+      {{- $code -}}
+    </code></pre>
+  </div>
 </div>
-  
