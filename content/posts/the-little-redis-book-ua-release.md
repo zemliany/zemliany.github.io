@@ -8,7 +8,6 @@ tags:
 - Redis
 - nRDBMS
 - noSQL
-- 
 ---
 
 Translation, I'm not afraid to say it, is a real bestseller for all novice-engineers who are starting to dive into non-relational structures and databases. Now available in Ukrainian thanks to a translation by SET University students
