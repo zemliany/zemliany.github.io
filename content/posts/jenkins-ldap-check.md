@@ -1,7 +1,7 @@
 
 ---
 author: "Maksym Zemlianyi"
-title: "Jenkins Global Security: verify LDAP credentials before the rotataion"
+title: "Jenkins Global Security: verify LDAP credentials before the rotation"
 date: "2025-08-05"
 description: ""
 tags:
