@@ -28,13 +28,29 @@
   background: #2b2b2b;
   color: #ffffff;
   margin: 0;
-  padding: 0.1rem 1rem 1rem; 
+  padding: 0;
   overflow: auto;
   font-size: 0.85rem;
   border-top: 1px solid #444;
-  line-height: 1.4; /* Adjust line spacing if needed */
+  line-height: 1.4;
   display: flex;
-  align-items: center; /* Centers the text inside the block */
+}
+
+.line-numbers {
+  background: #1a1a1a;
+  color: #555;
+  padding: 0.1rem 0.5rem 1rem 0.5rem;
+  text-align: right;
+  user-select: none;
+  border-right: 2px solid #333;
+  min-width: 2rem;
+  font-weight: normal;
+}
+
+.code-content {
+  padding: 0.1rem 1rem 1rem 1rem;
+  flex: 1;
+  white-space: pre;
 }
 
 .copy-button {
@@ -65,3 +81,19 @@
 .copy-button:active {
   background: #888;
 }
+
+/* Syntax Highlighting */
+.code-block .token.comment { color: #75715e; }
+.code-block .token.keyword { color: #f92672; }
+.code-block .token.string { color: #e6db74; }
+.code-block .token.number { color: #ae81ff; }
+.code-block .token.function { color: #a6e22e; }
+.code-block .token.class-name { color: #66d9ef; }
+.code-block .token.variable { color: #fd971f; }
+.code-block .token.operator { color: #f92672; }
+.code-block .token.punctuation { color: #f8f8f2; }
+.code-block .token.property { color: #a6e22e; }
+.code-block .token.boolean { color: #ae81ff; }
+.code-block .token.null { color: #ae81ff; }
+.code-block .token.undefined { color: #ae81ff; }
+.code-block .token.builtin { color: #66d9ef; }
