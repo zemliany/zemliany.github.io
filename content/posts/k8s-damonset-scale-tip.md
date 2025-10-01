@@ -3,11 +3,12 @@
 author: "Maksym Zemlianyi"
 title: "Scale DaemonSet to zero in Kubernetes"
 date: "2025-10-01"
-description: "Quick guide how to check consistency of ssl certificate and upload it to AWS IAM or ACM"
+description: "Quick guide how to scale-down and back DaemonSet in Kubernetes"
 tags:
 - Kubernetes (K8s)
 - kubectl
 - DaemonSet
+- Tips&Tricks
 ---
 
 Sometimes we need to scale-down and up daemonset for debugging or any other purposes. Natively Kubernetes does not allow to do it via standard method using kubectl due to design of DaemonSet itself
